@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=JetBrains+Mono:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Baloo Bhai 2', cursive; 
+        }
+        /* css reset  */
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+        }
+        .left{
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+        .left img{
+            width: 70px;
+            
+        }
+        .left div{
+            font-size: 13px;
+            line-height:0px;
+            
+        }
+        .mid{
+            display: block;
+            width: 38%;
+            margin: 20px auto;        /* to do center with margin auto there should be 2 condition first it should be block element and second it  should have some width*/
+            /* border: 2px solid blue; */
+            
+        }
+        .right{
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+        .navbar{
+            display: inline-block;
+                  
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 19px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 18px;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: #efe306;
+        }
+        .btn{
+            margin: 0px 9px;
+            color: white;
+            background-color: #4a45a3;
+            padding: 4px 11px;
+            border-radius: 15px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        .container{
+            border: 2px solid #0fd80f;
+            width: 28%;
+            margin: 88px 90px;
+            padding: 9px 24px;
+            border-radius: 8px;
+
+        }
+        .container h1{
+            text-align: center;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 45%;
+            margin: 11px auto;
+            padding: 1px;
+            border: 2px solid #0a0b0b;
+            border-radius: 5px;
+            font-size: 18px;
+            
+        }
+        .container button{
+            display: block;
+            width: 46%;
+            margin: 5px auto;
+            border-radius: 5px;
+        }
+    </style>
+   
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div> <strong>XYZ Fitness</strong> </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+            
+        </div>
+
+    </header>
+
+
+    <div class="container">
+        <h1>Join The Best GYM</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email ID">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone No.">
+            </div>
+            <button class="btn">Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>
